@@ -1,0 +1,20 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @entrada.name %>
+</p>
+
+<p>
+  <b>Title:</b>
+  <%= @entrada.title %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @entrada.content %>
+</p>
+
+
+<%= link_to 'Edit', edit_entrada_path(@entrada) %> |
+<%= link_to 'Back', entradas_path %>

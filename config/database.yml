@@ -1,0 +1,18 @@
+default: &local_defaults
+  adapter: postgresql
+  host: localhost
+  encoding: utf8
+  min_messages: WARNING
+  pool: 5
+
+development:
+  <<: *local_defaults
+  database: blog_development_sura
+
+test:
+  <<: *local_defaults
+  database: blog_test_sura
+
+staging:
+  <<: *local_defaults
+  database: blog_staging_sura
